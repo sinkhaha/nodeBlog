@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、算法 | sinkhaha的博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="一个node.js程序员的学习笔记">
+    <link rel="preload" href="/nodeBlog/assets/css/0.styles.1a9d01b8.css" as="style"><link rel="preload" href="/nodeBlog/assets/js/app.6ca98d68.js" as="script"><link rel="preload" href="/nodeBlog/assets/js/2.54429308.js" as="script"><link rel="preload" href="/nodeBlog/assets/js/11.ecfa3d82.js" as="script"><link rel="preload" href="/nodeBlog/assets/js/3.975113a2.js" as="script"><link rel="prefetch" href="/nodeBlog/assets/js/10.b08d28b2.js"><link rel="prefetch" href="/nodeBlog/assets/js/12.8a5c28cd.js"><link rel="prefetch" href="/nodeBlog/assets/js/13.8a02d9b5.js"><link rel="prefetch" href="/nodeBlog/assets/js/14.4038996a.js"><link rel="prefetch" href="/nodeBlog/assets/js/15.b0f9a865.js"><link rel="prefetch" href="/nodeBlog/assets/js/16.a9e2a432.js"><link rel="prefetch" href="/nodeBlog/assets/js/17.156ec433.js"><link rel="prefetch" href="/nodeBlog/assets/js/18.d20bea0f.js"><link rel="prefetch" href="/nodeBlog/assets/js/19.acc280cc.js"><link rel="prefetch" href="/nodeBlog/assets/js/4.0bfaaae4.js"><link rel="prefetch" href="/nodeBlog/assets/js/5.1c83c7a3.js"><link rel="prefetch" href="/nodeBlog/assets/js/6.0da4b6e2.js"><link rel="prefetch" href="/nodeBlog/assets/js/7.2e285360.js"><link rel="prefetch" href="/nodeBlog/assets/js/8.3bc13b01.js"><link rel="prefetch" href="/nodeBlog/assets/js/9.b398ad71.js">
+    <link rel="stylesheet" href="/nodeBlog/assets/css/0.styles.1a9d01b8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/nodeBlog/" class="home-link router-link-active"><img src="/nodeBlog/img/nodejs.jpg" alt="sinkhaha的博客" class="logo"> <span class="site-name can-hide">sinkhaha的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nodeBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/nodeBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/nodeBlog/algorithm/" class="nav-link router-link-active">
+  数据结构与算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodeBlog/database/mongodb/" class="nav-link">
+  mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/nodeBlog/database/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/nodeBlog/database/redis/" class="nav-link">
+  redis
+</a></li></ul></div></div><div class="nav-item"><a href="/nodeBlog/network/" class="nav-link">
+  计算机网络
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/nodeBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/nodeBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/nodeBlog/algorithm/" class="nav-link router-link-active">
+  数据结构与算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodeBlog/database/mongodb/" class="nav-link">
+  mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/nodeBlog/database/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/nodeBlog/database/redis/" class="nav-link">
+  redis
+</a></li></ul></div></div><div class="nav-item"><a href="/nodeBlog/network/" class="nav-link">
+  计算机网络
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/nodeBlog/algorithm/" aria-current="page" class="sidebar-link">数据结构和算法总目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>数据结构</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nodeBlog/algorithm/dataStructure/" aria-current="page" class="sidebar-link">数据结构目录</a></li><li><a href="/nodeBlog/algorithm/dataStructure/timeComplex/" aria-current="page" class="active sidebar-link">时间复杂度/空间复杂度</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、算法"><a href="#一、算法" class="header-anchor">#</a> 一、算法</h2> <h3 id="_1、衡量算法的好坏"><a href="#_1、衡量算法的好坏" class="header-anchor">#</a> 1、衡量算法的好坏</h3> <ol><li>时间复杂度 (运行时间长短)</li> <li>空间复杂度 (占用空间大小)</li></ol> <h3 id="_2、算法的应用"><a href="#_2、算法的应用" class="header-anchor">#</a> 2、算法的应用</h3> <ul><li>运算</li> <li>查找</li> <li>排序</li> <li>最优决策</li></ul> <h2 id="二、数据结构"><a href="#二、数据结构" class="header-anchor">#</a> 二、数据结构</h2> <ul><li>线性结构</li></ul> <blockquote><p>如 数组、链表，以及衍生的的栈、队列、哈希表</p></blockquote> <ul><li>树</li></ul> <blockquote><p>如 最经典的二叉树</p></blockquote> <ul><li>图</li> <li>其他数据结构</li></ul> <blockquote><p>如 跳表、哈希链表、位图</p></blockquote> <h2 id="三、时间复杂度"><a href="#三、时间复杂度" class="header-anchor">#</a> 三、时间复杂度</h2> <h4 id="_1、介绍"><a href="#_1、介绍" class="header-anchor">#</a> 1、介绍</h4> <p>时间复杂度</p> <blockquote><p>即运行时间的长短，每个问题都可以转化为一个未知函数T(n)，问题的规模是参数n，时间复杂度即该函数的解。</p></blockquote> <hr> <p>假设问题规模为n,则函数T(n)表示程序基本操作的执行次数。
+问题：有一个长10厘米的面包，小明每3分钟吃1厘米，请问小明多久吃完？
+答：10/1 * 3 = 15分钟</p> <p>如果面包长度是n厘米，则
+n/1 * 3 = 3n
+即
+T(n) = 3n 执行次数是线性的</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 以下3个输出语句代表函数的常量3</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2、大0表示法"><a href="#_2、大0表示法" class="header-anchor">#</a> 2、大0表示法</h4> <p>渐进时间复杂度</p> <blockquote><p>官方定义：若存在函数f(n)，使得当n趋近于无穷大时，T(n)/f(n)的极限值为不等于零的常数， 则称f(n)是T(n)的同数量级函数。记作T(n)=O(f(n))，称为O(f(n))，O为算法的渐进时间 复杂度，简称为时间复杂度。</p></blockquote> <p>因为渐进时间复杂度用大写O来表示，所以也被称为大O表示法。</p> <hr> <p>如何推导时间复杂度,有以下规则</p> <blockquote><ol><li>如果运行时间是常数量级，则用常数1表示</li> <li>只保留时间函数中的最高阶项</li> <li>如果最高阶项存在，则省去最高阶项前面的系数</li></ol></blockquote> <p>例如</p> <ol><li>T(n) = 3n</li></ol> <blockquote><p>可利用第3个规则，最高项为3n,省去3，则转化的时间复杂度为 T(n) = O(n);
+<img src="/nodeBlog/algorithm/3n函数.png" alt="3n函数"></p></blockquote> <p>2.T(n) = 5logn</p> <blockquote><p>最高阶项为5logn,省去系数5，则转化的时间复杂度为 T(n) = O(logn)
+<img src="/nodeBlog/algorithm/logN函数.png" alt="logN函数"></p></blockquote> <p>3.T(n) = 2</p> <blockquote><p>只有常数量级，则转化的时间复杂度为：
+T(n) =O(1)。
+<img src="/nodeBlog/algorithm/常数函数.png" alt="常数函数"></p></blockquote> <p>4.T(n) = 0.5n2+ 0.5n</p> <blockquote><p>最高阶项为0.5n2，省去系数0.5，则转化的时间复杂度为：T(n) =O(n2)
+<img src="/nodeBlog/algorithm/n的平方函数.png" alt="n的平方函数"></p></blockquote> <p>当n的取值足够大时，不难得出下面的结论：
+O(1)&lt;O(logn)&lt;O(n)&lt;O(nlogn)&lt;O(n2)</p> <p>除了上述4个场景，还有许多不同形式的时间复杂度，例如： O(nlogn)、O(n3)、O(mn)、O(2n)、O(n!)</p> <hr> <p>时间复杂度的差异</p> <blockquote><p>不同算法的时间复杂度对比要看n的规模，即函数的斜率，斜率越大算法越差。</p></blockquote> <h2 id="四、空间复杂度"><a href="#四、空间复杂度" class="header-anchor">#</a> 四、空间复杂度</h2> <p>空间复杂度</p> <blockquote><p>空间复杂度是对一个算法在运行过程中临时占用存储空间大小的量度，同样使用了大O表示法</p></blockquote> <p>程序占用空间大小的计算公式记作S(n)=O(f(n))，其中n为问题的规模，f(n)为算法所占存储空间的函数。</p> <hr> <p>常见的空间复杂度的几种情形</p> <ul><li>常量空间 O(1)</li></ul> <blockquote><p>算法的存储空间大小固定，和输入规模没有直接的关系时</p></blockquote> <ul><li>线性空间 O(n)</li></ul> <blockquote><p>当算法分配的空间是一个线性的集合（如数组），并且集合大小和输入规模n成正比时，空间复杂度记作O(n)</p></blockquote> <ul><li>二维空间 O(n^2)</li></ul> <blockquote><p>当算法分配的空间是一个二维数组集合，并且集合的长度和宽度都与输入规模n成正比时，空间复杂度记作O(n2)</p></blockquote> <ul><li>递归空间 O(n) n为递归的深度</li></ul> <blockquote><ol><li>虽然递归代码中并没有显式地声明变量或集合，但是计算机在执行程序时，会专门分配一块内存，用来存储“方法调用栈”。</li> <li>“方法调用栈”包括进栈和出栈两个行为。 当进入一个新方法时，执行入栈操作，把调用的方法和参数信息压入栈中。 当方法返回时，执行出栈操作，把调用的方法和参数信息从栈中弹出。</li> <li>执行递归操作所需要的内存空间和递归 的深度成正比。纯粹的递归操作的空间复杂度也是线性的，如果递归的深度是n，那么空间复杂度就是O(n)。</li></ol></blockquote> <h2 id="五、时间复杂度和空间复杂度的取舍"><a href="#五、时间复杂度和空间复杂度的取舍" class="header-anchor">#</a> 五、时间复杂度和空间复杂度的取舍</h2> <p>如果空间重要：时间换空间
+如果时间重要：空间换时间</p> <p>大多数时候，时间复杂度更为重要一些，宁可多分配一些内存空间，也要提升程序的执行速度。</p> <p><strong>参考：漫画算法-小灰的算法之旅</strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nodeBlog/algorithm/dataStructure/" class="prev router-link-active">
+        数据结构目录
+      </a></span> <span class="next"><a href="/nodeBlog/algorithm/alg/">
+        算法目录
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----><div></div></div></div>
+    <script src="/nodeBlog/assets/js/app.6ca98d68.js" defer></script><script src="/nodeBlog/assets/js/2.54429308.js" defer></script><script src="/nodeBlog/assets/js/11.ecfa3d82.js" defer></script><script src="/nodeBlog/assets/js/3.975113a2.js" defer></script>
+  </body>
+</html>
